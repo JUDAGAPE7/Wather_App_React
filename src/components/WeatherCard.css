@@ -1,0 +1,139 @@
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff8f;
+    padding: 2em 1.5em;
+    border-radius: 0.8em;
+    
+}
+
+.card__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+    animation: moveUpDown 2s ease infinite;
+   
+} 
+.country__line{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image__country{
+    width: 15%;
+    margin-top: 1.51em;
+}
+
+.card__country{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.51em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    text-align: center;
+} 
+
+.card__body{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    margin-top: 1em;
+     margin-bottom: 2em;
+}
+
+.card__image{
+    width: 100%;
+}
+
+.info{
+    display: grid;
+    gap: 1em;
+} 
+
+.info__title{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    &::after,
+    &::before{
+        content: '"';
+    }
+}
+
+.info__list{ 
+    display: grid;
+    gap: 0.5em;
+
+}
+
+.info__item{
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.info__label{
+    color: #555;
+}
+.info__value{
+    font-weight: 500;
+    
+}
+.card__temp{
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.card__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: rgba(50, 50, 252, 0.842); 
+    color: white;
+    padding: 0.6em 2em;
+    border-radius: 1em;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(1.2);
+        color: black;
+        background-color: rgba(248, 245, 47, 0.664);
+
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .card {
+        max-width: 100%; 
+        
+
+    } 
+    .info__label{
+        color: rgb(128, 48, 68);
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }

@@ -1,0 +1,42 @@
+.app {
+
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* background-image:  */
+
+.background-image-1 {
+  background-image: url('./images/Morning.jpg');
+}
+
+/* Estilo para el fondo de imagen 2 */
+.background-image-2 {
+  background-image: url('./images/Mid-Day.jpg');
+}
+
+/* Estilo para el fondo de imagen 3 */
+.background-image-3 {
+  background-image: url('./images/pexels-michael-block-1691617-3225517.jpg');
+
+}
+
+/* Estilo para el fondo de imagen 4 */
+.background-image-4 {
+  background-image: url('./images/Night.jpg');
+
+}
+
+
+.loading {
+  background-color: #ffffff8f;
+}
+
+.allow {
+  background-color: #ffffff8f;
+}
